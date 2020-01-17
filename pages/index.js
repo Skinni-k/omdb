@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Layout from '../components/MyLayout';
+import fetch from 'isomorphic-unfetch';
 
 export default class extends React.Component {
   constructor(props) {
