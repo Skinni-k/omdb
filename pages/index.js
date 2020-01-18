@@ -24,7 +24,7 @@ export default class extends React.Component {
 
   async searchResult(title, page) {
     const res = await fetch(
-      `http://www.omdbapi.com/?apikey=953a036f&s=${title}&page=${page}`
+      `https://www.omdbapi.com/?apikey=953a036f&s=${title}&page=${page}`
     );
     const data = await res.json();
     if (data.Response === 'True') {

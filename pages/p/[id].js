@@ -12,7 +12,7 @@ const Post = props => {
 
 Post.getInitialProps = async function(context) {
   const { id } = context.query;
-  const res = await fetch(`http://www.omdbapi.com/?i=${id}&apikey=953a036f`);
+  const res = await fetch(`https://www.omdbapi.com/?i=${id}&apikey=953a036f`);
   const result = await res.json();
   return { result };
 };
