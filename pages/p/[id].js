@@ -19,7 +19,7 @@ const Post = props => {
   return (
     <div style={layoutStyle}>
       <h1 style={innerStyle}>{props.result.Title}</h1>
-      {props.result.Poster != 'NA' ? (
+      {props.result.Poster !== 'N/A' ? (
         <img src={props.result.Poster} style={imgStyle} />
       ) : (
         <img
