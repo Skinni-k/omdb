@@ -83,13 +83,9 @@ export default class extends React.Component {
             </li>
           ))}
           {this.state.page_numbers.map(page_number => (
-            <a
-              href="#"
-              onClick={e => this.goToPage(page_number)}
-              key={page_number}
-            >
+            <span onClick={e => this.goToPage(page_number)} key={page_number}>
               {page_number} |
-            </a>
+            </span>
           ))}
         </ul>
       </Layout>
