@@ -19,11 +19,11 @@ const Post = props => {
   return (
     <div style={layoutStyle}>
       <h1 style={innerStyle}>{props.result.Title}</h1>
-      {props.result.Poster == '/^http/' ? (
+      {props.result.Poster != 'NA' ? (
         <img src={props.result.Poster} style={imgStyle} />
       ) : (
         <img
-          src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/9/6/0/9/239069-6-eng-GB/Appetite-Learning-SIC-Food-20162.jpg"
+          src="https://treefurniturerental.ca/wp-content/uploads/2017/05/sorry-image-not-available.jpg"
           style={imgStyle}
         />
       )}
