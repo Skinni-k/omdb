@@ -23,7 +23,7 @@ const Post = props => {
         <img src={props.result.Poster} style={imgStyle} />
       ) : (
         <img
-          src="https://assets.prestashop2.com/sites/default/files/styles/blog_750x320/public/blog/2019/10/banner_error_404.jpg?itok=eAS4swln"
+          src="https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/9/6/0/9/239069-6-eng-GB/Appetite-Learning-SIC-Food-20162.jpg"
           style={imgStyle}
         />
       )}
