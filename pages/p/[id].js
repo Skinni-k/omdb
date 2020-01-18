@@ -1,12 +1,34 @@
-import Layout from '../../components/MyLayout';
 import fetch from 'isomorphic-unfetch';
+
+const layoutStyle = {
+  textAlign: 'center'
+};
+
+const innerStyle = {
+  display: 'block',
+  fontSize: 20
+};
+
+const imgStyle = {
+  marginLeft: 'auto',
+  marginRight: 'auto',
+  display: 'block'
+};
 
 const Post = props => {
   return (
-    <Layout>
-      <h1>{props.result.Title}</h1>
-      <img src={props.result.Poster} />
-    </Layout>
+    <div style={layoutStyle}>
+      <h1 style={innerStyle}>{props.result.Title}</h1>
+      {props.result.Poster == '/^http/' ? (
+        <img src={props.result.Poster} style={imgStyle} />
+      ) : (
+        <img
+          src="https://assets.prestashop2.com/sites/default/files/styles/blog_750x320/public/blog/2019/10/banner_error_404.jpg?itok=eAS4swln"
+          style={imgStyle}
+        />
+      )}
+      <p style={innerStyle}> {props.result.Plot}</p>
+    </div>
   );
 };
 
